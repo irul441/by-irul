@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="https://kit.fontawesome.com/254b183e38.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Portfolio site template</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+      <script src="https://kit.fontawesome.com/254b183e38.js" crossorigin="anonymous"></script> 
+      <link rel="icon" href="https://i.pinimg.com/736x/64/b8/63/64b863860d35ad2bb6561f6ac2955d9c.jpg">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+      <script>
+         function scrolltotop()
+         {
+         	$('html, body').animate({scrollTop : 00},500);
+         }
+         function projek()
+         {document.querySelector('#projek').scrollIntoView({ behavior: 'smooth' });}
+          
+         function contak()
+         {document.querySelector('#contak').scrollIntoView({ behavior: 'smooth' });}
+           
+function ttop() {
+   document.querySelector('#ttop').scrollIntoView({
+      behavior: 'smooth'
+   });
+}
+      </script>
+      <style>
+
+       @keyframes animasiku{
+            from{margin-left:400;}
+            to{margin-left:0;}
+        }
+        
+        
+         .social-media {
+	padding: 5px 5px;
+	display: flex;
+	position: center;
+	align-items: space-around;
+	justify-content: center;
+	Border-left: 4px solid blue;
+	Border-bottom: 2px solid lightblue;
+	width: 200px;
+	border-radius: 30px 0px 30px;
+
+}
+         .social-media a {
+         margin: 10px;
+         font-size: 1.5rem;
+         text-align:center;
+         display: inline-block;
+         color:;
+         }
+         .social-media a i{
+         cursor: pointer;
+         }
+         .social-media  a:hover {
+         color: var(--main-decor-color);
+         text-shadow: 0 0 50px blue;
+         }
+         @keyframes isi{0% {transform: scale(1); opacity:0;margin-top:0px; background:lightyellow}0% {transform: scale(1); opacity:0;margin-left:902px; background:transparent}100% {transform: scale(1);margin-left:px; opacity:1}}
+         @keyframes side{0% {transform: scale(1); opacity:0.1;margin-top:-550px; background:transparent}100% {transform: scale(1); opacity:1}}
+         @keyframes side..{0% {transform: scale(1); opacity:0;margin-left:-30px; background:blue}70% {transform: scale(1); opacity:0;margin-left:490px; background: }100% {transform: scale(1); opacity:0}}
+         #cr{animation-name:ccrr;animation-duration: 0.5s;animation-iteration-count: infinite;}
+         a{color: white;}
+         p{
+         color: white; font-size:12px
+         }
+         .logo{
+         position:absolute;
+         top: 2px;
+         left: 30px;
+         width:30px;height:30px
+         }
+         h3{
+         text-align: center;
+         padding-bottom: 5px;
+         height:20px;
+         letter-spacing: normal;
+         font-family:  'Poppins', sans-serif;
+         font-style: italic;
+         font-size: 30px; opacity:1;
+         color: lightyellow;
+         text-shadow: 0px 0px 40px white; opacity:1
+         }
+         .header
+         {
+         background:black;z-index:1000; height:50px; cursor: pointer;
+         position:fixed;left:-2px;width:100%;top:0px
+         }
+         body
+         {
+         background:linear-gradient(to left , yellow, darkslateblue);
+         font-family: 'Poppins', sans-serif;font-color: white;
+       /*   background-image:url('https://i.pinimg.com/736x/43/38/6e/43386e4c99b0810857f3c9b221d632d3.j.pg');background-repeat:repeat;background-size:cover; opacity:51; background-opacity:1
+        */ }
+         #tombolScrollTop
+         {
+         cursor: pointer;
+         position:fixed;
+         left:75%;
+         bottom:50px;
+         border:3px solid #585858;
+         background-color:white;
+         color:#585858;
+         border-radius:100%;
+         height:90px;
+         width:90px;
+         font-size:15px;
+         display: none;
+         }
+         {
+         font-family: Arial, Helvetica, sans-serif;
+         margin: 0;
+         padding: 0;
+         }
+         .toggle-sidebar{
+         font-weight: bold;
+         padding: 10px;
+         position: fixed;
+         right: 10px;
+         top: 2px;
+         cursor: pointer;width:50px
+         }
+         .sidebar li a {
+         display: block;
+         font-size:10px;
+         padding: 15px;
+         text-decoration: none;
+         color: black;
+         font-weight: bold;
+         text-transform: uppercase;
+         border-bottom: 0px solid silver;
+         transition: background-color 0.5s;
+         }
+         .sidebar li a:hover {
+         color: purple ; opacity:1
+         }
+         .sidebar {
+         height: 100vh;
+         width: 100px;
+         list-style: none;
+         color: black;
+         /* tambahkan kode ini */
+         position: absolute; background:white;
+         right: 0px;
+         transition: 0.5s;
+         top:-15px
+         }
+         /* tambahkan selector .sidebar-open di css */
+         .sidebar-open {
+         background:yellow; opacity:1
+         }
+         .toggle-sidebar div{
+         width: 30px;
+         height: 3px;
+         background: #dbdbdb;
+         margin: 5px;
+         transition:all 0.3s ease;
+         }
+         .toggle-sidebar .line1{
+         transform: rotate(-deg) translate(-5px,9px);
+         }
+         .toggle-sidebar .line2{
+         opacity: 1;
+         }
+         .toggle-sidebar .line3{
+         transform: rotate(deg) translate(-5px,-6px);
+         }
+         @keyframes navLinkFade{
+         from{
+         opacity:1;
+         transform: translatex(50px);
+         }
+         to{
+         opacity: 0;
+         transform:translatex(0px);
+         }
+         }
+         .contak{
+         color: yellow;
+         border:1px solid blue; border-radius:5px; padding:0px 5px; background:linear-gradient(to right, #000046, #1cb5e0)
+         }
+
+.contak {
+	color: yellow;
+	border: 1px solid blue;
+	border-radius: 5px;
+	padding: 0px 5px;
+	background: linear-gradient(to right, #000046, #1cb5e0)
+}
+
+.imgcard {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 160px;
+	height: 320px;
+	border-radius: 12px;
+	background: linear-gradient(to right, #006e57, #1cb5e0);
+	;
+}
+
+.imgcard1 {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 160px;
+	height: 260px;
+	border-radius: 12px;
+	background: linear-gradient(to right, blue, lightblue);
+	;
+}
+
+.img1 {
+	width: 100%;
+	height: 90%;
+	position: relative;
+	top: ;
+	opacity: 0.7
+}
+
+.judul {
+	position: relative:top:0;
+	font-style: italic;
+	font-size: 14px;
+	background: -webkit-linear-gradient(45deg, red, yellow);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
+	border-bottom: 3px solid lightyellow;
+	border-left: 3px solid lightgreen;
+	border-radius: 15px 0px 15px;
+	width: 95%
+}
+
+.tomboldownload {
+	position: relative;
+	bottom: 3%
+}
+#overflowTest {
+  
+  color: black;
+  padding: 15px;
+  width: 20%;
+  height: 100%;
+  overflow: scroll;
+  border-radius: 0px 0px 0px;
+  Border-left:3px solid white;
+  position:fixed;top:35px;
+  
+
+}
+.penuh {width:100%}
+.projek::-webkit-scrollbar { display: none;width:100% }
+
+      </style>
+   </head>
+   <body>
+      <div style="opacity:2" id="wrapper">
+      <div style="opacity:1">
+
+    <div class="header" style="position:fixed">
+         <a class="logo" href="#home">
+         <img width="70px" src="https://i.pinimg.com/736x/64/b8/63/64b863860d35ad2bb6561f6ac2955d9c.jpg" alt="repl logo" />
+         </a>
+         <div style="position: fixed;width:100%">
+            <a id="cr" style="position: fixed;background: -webkit-linear-gradient(45deg, #08AADB, #f07328);-webkit-background-clip: text;-webkit-text-fill-color: transparent; left:100px;top:15px;font-size:10px">created by irul</a>
+         </div>
+         <div class="toggle-sidebar" id="toggle-sidebar">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+         </div>
+      </div>
+
+ <ul id="overflowTest" class="sidebar">
+            <li><a id="1" onclick="beranda()">Beranda</a></li>
+            <li><a id="2" onclick="b1()">Portofolio</a></li>
+            <li><a onclick="b2();">template</a></li>
+            <li><a onclick="b3();">Tentang</a></li>
+            <li><a onclick="b4();">Kontak</a></li>
+            </ul>
+       <div class="projek" style="display:block;width:70%;height:417px;overflow: scroll; position: relative;top:40px;" id="projek">
+        <h3>BERANDA</h3>
+        <div id="beranda">
+<p style="font-size:14px; color:black">selamat datang di website ku,
+web ini adalah contoh template html pertama buatan ku,
+jika kamu menginginkan template html ini , langsung aja klik menu
+TEMPLATE<br><br><br><br>
+lihat juga menu PORTOFOLIO disana ada beberapa artikel yang saya tuliskan.
+<br><br><br><br>jika kamu punya pertanyaan tentang template html ini, kamu bisa klik menu KONTAK.</p>
+<br><br><hr><hr>
+        </div>
+       </div>
+
+       <div class="projek" style="display:none;" id="projek1">
+        <h3 style="">PORTOFOLIO</h3>
+        <div id="isi">
+
+      <p>p</p> <p>p</p> <p>p</p> <p>p</p> <p>p</p> <p>p</p>
+      <p>p</p> <p>p</p> <p>p</p> <p>p</p> <p>p</p> <p>p</p>
+      <p>p</p> <p>p</p> <p>p</p> <p>p</p> <p>p</p> <p id="sat">p</p>
+   </div>
+       </div>
+       <div class="projek" style="display:none;" id="projek2">
+        <h3>TEMPLATE</h3>
+
+        <div id="template">
+<p style="font-size:10px; color:blue">selamat datang di website ku,
+web ini adalah contoh template html pertama buatan ku,
+jika kamu menginginkan template html ini , langsung aja klik menu
+TEMPLATE</p>
+        </div>
+       </div>
+       <div class="projek" style="display:none;" id="projek3">
+        <h3>TENTANG</h3>
+
+        <div id="tentang">
+<p style="font-size:10px; color:blue">selamat datang di website ku,
+web ini adalah contoh template html pertama buatan ku,
+jika kamu menginginkan template html ini , langsung aja klik menu
+TEMPLATE</p>
+        </div>
+       </div>
+       <div class="projek" style="display:none;" id="projek4">
+        <h3>KONTAK</h3>
+
+        <div id="kontak">
+<p style="font-size:10px; color:blue">selamat datang di website ku,
+web ini adalah contoh template html pertama buatan ku,
+jika kamu menginginkan template html ini , langsung aja klik menu
+TEMPLATE</p>
+         <center>
+            <div class="social-media">
+               <a href="https://api.whatsapp.com/send?phone=+6285225983150" target="_blank"><i class='fa-brands fa-whatsapp'></i></a>
+               <a href="#" target="_blank"><i class='fa-brands fa-youtube'></i></a>
+               <a href="#" target="_blank"><i class='fa-brands fa-tiktok'></i></a>
+            </div>
+         </center>
+        </div>
+       </div>
+       </div>
+       <div class="projek" style="display:none;" id="projek5">
+        <h3>PORTOFOLIO</h3>
+
+       </div>
+       <div class="projek" style="display:none" id="anim">
+        <h3></h3>
+
+       </div></div><br><br>
+
+<div id="ads" class="projek" style="; min-height:170px;margin:-10px;width:75%;overflow:auto; Border-top:2px solid black; position:relative;bottom:-20px">
+<!--<script type="text/javascript">
+	atOptions = {
+		'key' : 'a5c8ef7bfb912ee36a1586d4fb061648',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://walkingtutor.com/a5c8ef7bfb912ee36a1586d4fb061648/invoke.js"></scr' + 'ipt>');
+</script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a5c8ef7bfb912ee36a1586d4fb061648',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://walkingtutor.com/a5c8ef7bfb912ee36a1586d4fb061648/invoke.js"></scr' + 'ipt>');
+</script>
+--><center><br>  »»»ads«««
+</div>
+      <!----------- content down ----------->
+      <!----------- footer ----------->
+      <script>
+         const toggleSidebar = document.querySelector("#toggle-sidebar");
+         const sidebar = document.querySelector(".sidebar");
+         const projeks1 = document.querySelector(".projek");
+         
+         toggleSidebar.addEventListener("click", () => {
+           sidebar.classList.toggle("sidebar-open");
+           projeks1.classList.toggle("penuh")
+         });
+      </script>
+</center>
+<script>
+var side="animation-name:side;animation-duration: 1.5s;width:70%;height:417px;overflow: scroll; position: relative;top:40px; opacity:1";
+var side1="animation-name:side1;animation-duration: 1s;width:70%;height:450px;overflow: scroll; position: absolute;top:50px;opacity:1";
+var side2="animation-name:isi;animation-duration: 2.5s;margin-left:20px;opacity:1;overflow: scroll";
+
+    var projek = document.getElementById("projek");
+    var projek1 = document.getElementById("projek1");
+    var projek2 = document.getElementById("projek2");
+    var projek3 = document.getElementById("projek3");
+    var projek4 = document.getElementById("projek4");
+    var projek5 = document.getElementById("projek5");
+    var anim = document.getElementById("anim");
+    var isi = document.getElementById("isi");
+    var berand = document.getElementById("beranda");
+    var templat = document.getElementById("template");
+    var kontk = document.getElementById("kontak");
+    var tenttg = document.getElementById("tentang");
+
+function beranda() {
+        projek.style.display = "block";
+        projek.style = side;
+        projek1.style.display = "none";
+        projek2.style.display = "none";
+        projek3.style.display = "none";
+        projek4.style.display = "none";
+        anim.style = side1;
+        berand.style.display = "none";
+        setTimeout("berand.style = side2;",1);
+        setTimeout("anim.style.display = 'none';",1000)
+
+} 
+function b1() {
+        projek1.style.display = "block";
+        projek1.style = side;
+        projek.style.display = "none";
+        projek2.style.display = "none";
+        projek3.style.display = "none";
+        projek4.style.display = "none";
+        anim.style = side1;
+        isi.style.display = "none";
+        setTimeout("isi.style = side2;",1);
+        setTimeout("anim.style.display = 'none';",1000);
+        setTimeout("document.querySelector('#sat').scrollIntoView({ behavior: 'smooth' })",2500)
+  
+} 	
+	
+function b2() {
+        projek2.style.display = "block";
+        projek2.style = side;
+        projek1.style.display = "none";
+        projek.style.display = "none";
+        projek3.style.display = "none";
+        projek4.style.display = "none";
+        anim.style = side1;
+        templat.style.display = "none";
+        setTimeout("templat.style = side2;",1);
+        setTimeout("berand.style = side2;",1);
+        setTimeout("anim.style.display = 'none';",1000)
+} 	
+function b3() {
+        projek3.style.display = "block";
+        projek3.style = side;
+        projek1.style.display = "none";
+        projek2.style.display = "none";
+        projek.style.display = "none";
+        projek4.style.display = "none";
+        anim.style = side1;
+        tenttg.style.display = "none";
+        setTimeout("tenttg.style = side2;",1);
+        setTimeout("anim.style.display = 'none';",1000)
+
+} 	
+function b4() {
+        projek4.style.display = "block";
+        projek4.style = side;
+        projek1.style.display = "none";
+        projek2.style.display = "none";
+        projek3.style.display = "none";
+        projek.style.display = "none";
+        anim.style = side1;
+        kontk.style.display = "none";
+        setTimeout("kontk.style = side2;",1);
+        setTimeout("anim.style.display = 'none';",1000)
+
+} 	
+function b5() {
+        projek5.style.display = "block";
+        projek.style.display = "none";
+        projek5.style = side;
+  
+} 	
+setTimeout("document.querySelector('#ads').scrollIntoView({ behavior: 'smooth' })",3000);alert('web dalam pengembangan')
+          
+</script>
+
+   </body>
+</html>
